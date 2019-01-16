@@ -1,3 +1,11 @@
+;;M-x customize-group 定制package
+;;M-x package-list-packages
+;;M-x package-auto-remove 删除package
+;;C-s 搜索
+;;i 安装
+;;u 取消安装
+;;Cap-Lock u 更新
+
 (require 'cl)
 
 ;;扩展package
@@ -7,7 +15,6 @@
   (setq package-archives '(("gnu" . "http://elpa.emacs-china.org/gnu/")
 			   ("melpa" . "http://melpa.org/packages/"))))
 
-(require 'cl)
 ;;add whatever packages you want here
 (defvar JohnHillRoss/packages '(
 			     ;; --- Auto-completion ---
