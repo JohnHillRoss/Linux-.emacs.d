@@ -20,4 +20,7 @@
 ;;打开org-agenda快捷键
 (global-set-key (kbd "C-c C-a") 'org-agenda)
 
+;;查看git仓库文件
+(global-set-key (kbd "C-c C-p C-f") 'counsel-git)
+
 (provide 'init-keybindings)
