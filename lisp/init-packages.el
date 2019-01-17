@@ -25,6 +25,9 @@
 			     counsel
 			     smartparens
 			     popwin
+			     ;; --- LaTeX ---
+			     auctex
+			     company-auctex
 			     ;; --- Themes ---
 			     darkokai-theme
 			     ) "Default packages")
@@ -63,6 +66,16 @@
 ;;自动定位光标位置和打开新窗口位置
 (require 'popwin)
 (popwin-mode 1)
+
+;;加载auctex	
+(load "auctex.el" nil t t)
+
+;;开启reftex
+(require 'reftex)
+
+;;开启company-auctex
+(require 'company-auctex)
+(company-auctex-init)
 
 ;;加载主题
 (load-theme 'darkokai 1)
