@@ -1,7 +1,5 @@
 (package-initialize)
 
-(server-start)
-
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
 ;;add more personal func 
