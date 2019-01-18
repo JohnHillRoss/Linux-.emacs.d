@@ -44,4 +44,32 @@
 	(indent-buffer)
 	(message "Indented buffer.")))))
 
+;;完善自动补全
+(setq hippie-expand-try-functions-list '(try-expand-dabbrev
+					 try-expand-dabbrev-all-buffers
+					 try-expand-dabbrev-from-kill
+					 try-complete-file-name-partially
+					 try-complete-file-name
+					 try-expand-all-abbrevs
+					 try-expand-list
+					 try-expand-line
+					 try-complete-lisp-symbol-partially
+					 try-complete-lisp-symbol))
+
+;;优化输入yes,no
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;;优化Dired,不用询问
+(setq dired-recursive-deletes 'always)
+(setq dired-recursive-copies 'always)
+
+;;优化Dired
+(put 'dired-find-alternate-file 'disabled nil)
+
+;;优化打开当前文件Dired
+(require 'dired-x)
+
+;;优化跨路径Dired
+(setq dired-dwim-target 1)
+
 (provide 'init-better-defaults)
