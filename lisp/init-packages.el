@@ -26,7 +26,7 @@
 			     smartparens
 			     popwin
 			     ;; --- LaTeX ---
-			     auctex
+			     ;;auctex
 			     company-auctex
 			     ;; --- Themes ---
 			     darkokai-theme
