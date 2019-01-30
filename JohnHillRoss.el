@@ -1,3 +1,4 @@
+
 (package-initialize)
 
 (add-to-list 'load-path "~/.emacs.d/lisp")
@@ -15,8 +16,6 @@
 (require 'init-better-defaults)
 (require 'init-org)
 (require 'init-keybindings)
-(require 'init-auctex)
-(require 'init-reftex)
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
